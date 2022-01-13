@@ -4,6 +4,7 @@ import React from "react"
 // allows us to use react features
 import { CustomerList } from "./customers/CustomerList.js"
 import { EmployeeList } from "./employees/EmployeeList.js"
+import { TicketList } from "./serviceTickets/TicketList.js"
 
 //react takes JSX( like html), converts it into JS then renders html
 export const Repairs = () => {
@@ -17,6 +18,9 @@ export const Repairs = () => {
 
             <h2>Employee List</h2>
             <EmployeeList />
+
+            <h2>Ticket List</h2>
+            <TicketList />
         </>
     )
 }
