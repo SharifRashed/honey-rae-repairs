@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import { Repairs } from './components/Repairs.js';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Repairs />
+    <BrowserRouter>
+      <Repairs />
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById("root")
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

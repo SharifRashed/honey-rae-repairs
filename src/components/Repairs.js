@@ -1,26 +1,13 @@
-//repairs.js component is only responsible for the order a component should be displayed
-
 import React from "react"
-// allows us to use react features
-import { CustomerList } from "./customers/CustomerList.js"
-import { EmployeeList } from "./employees/EmployeeList.js"
-import { TicketList } from "./serviceTickets/TicketList.js"
+import { NavBar } from "./nav/NavBar";
+import { ApplicationViews } from "./ApplicationViews";
 
-//react takes JSX( like html), converts it into JS then renders html
 export const Repairs = () => {
-
     return (
         <>
+            <NavBar />
             <h1>Honey Rae's Repair Shop</h1>
-
-            <h2>Customer List</h2>
-            <CustomerList />
-
-            <h2>Employee List</h2>
-            <EmployeeList />
-
-            <h2>Ticket List</h2>
-            <TicketList />
+            <ApplicationViews />
         </>
     )
 }
