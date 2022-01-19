@@ -7,7 +7,7 @@ import { TicketList } from "./serviceTickets/TicketList.js"
 export const ApplicationViews = () => {
     return (
         <>
-            <Route path="/customers">
+            <Route exact path="/customers">
                 <CustomerList />
             </Route>
             <Route path="/employees">
